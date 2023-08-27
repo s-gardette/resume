@@ -35,6 +35,6 @@ h3 {
     @apply text-2xl text-blue dark:text-blue-200 font-body font-extrabold;
 }
 h4 {
-    @apply text-lg text-red  dark:text-red-200 font-extrabold;
+    @apply text-lg text-red  dark:text-red-200 font-extrabold mb-2;
 }
 </style>
