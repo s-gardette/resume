@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from "vue";
-
 import Heading from "./Heading.vue";
 import Paragraph from "./Paragraph.vue";
 defineProps({
