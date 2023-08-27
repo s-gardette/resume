@@ -8,7 +8,13 @@
             type="image/jpeg"
             class="rounded-full"
         />
-        <img :src="Image.img.src" :alt="altText" class="rounded-t-full" />
+        <img
+            :src="Image.img.src"
+            :width="500"
+            :height="500"
+            :alt="altText"
+            class="rounded-t-full"
+        />
     </picture>
 </template>
 
