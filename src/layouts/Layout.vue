@@ -4,9 +4,11 @@ import PrintButton from "../components/PrintButton.vue";
 </script>
 
 <template>
-    <DarkModeToogle class="absolute right-0" />
-    <PrintButton class="absolute right-0 top-5" />
     <div class="flex justify-center flex-grow min-h-screen">
+        <div class="absolute right-0 top-2 right-5 bg-transparent">
+            <DarkModeToogle class="inline inline mr-2" />
+            <PrintButton class="inline" />
+        </div>
         <slot />
     </div>
 </template>

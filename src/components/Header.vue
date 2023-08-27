@@ -23,7 +23,7 @@ defineProps({
             <Heading :level="2" class="text-red lg:order-2 order-2">
                 {{ data.infos.job }}
             </Heading>
-            <div class="lg:order-1 order-1">
+            <div class="lg:order-1 order-1 text-lg">
                 <Text class="text-red">{{ data.infos.phone }}</Text>
                 <Text class="text-red">{{ data.infos.email }}</Text>
             </div>
@@ -33,7 +33,7 @@ defineProps({
                     :key="index"
                     :href="item"
                     target="_blank"
-                    class="block lg:text-right"
+                    class="block lg:text-right text-lg"
                 >
                     {{ item }}
                 </Link>

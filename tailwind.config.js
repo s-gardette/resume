@@ -96,6 +96,7 @@ export default {
                     200: "#96b6b1",
                     100: "#cbdbd8",
                 },
+                transparent: "transparent",
             },
         },
     },
