@@ -12,7 +12,7 @@ import PrintButton from "../components/PrintButton.vue";
 </template>
 <style scoped>
 div {
-    @apply bg-gradient-to-r from-red-300 to-blue-900 dark:from-blue-300 dark:to-red-300;
+    @apply bg-gradient-to-r dark:from-red-300 dark:to-blue-900 from-blue-300 to-red-300;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }

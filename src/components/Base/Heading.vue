@@ -1,5 +1,5 @@
 <template>
-    <component :is="currentTag">
+    <component :is="currentTag" class="mt-2 mb-4 tracking-wider">
         <slot></slot>
     </component>
 </template>
@@ -26,15 +26,15 @@ export default {
 
 <style lang="postcss" scoped>
 h1 {
-    @apply text-5xl lg:text-6xl xl:text-8xl text-blue font-title;
+    @apply text-5xl lg:text-6xl xl:text-8xl text-blue dark:text-blue-200 font-title;
 }
 h2 {
-    @apply lg:text-3xl text-red font-display;
+    @apply lg:text-3xl text-red  dark:text-red-200 font-display;
 }
 h3 {
-    @apply text-2xl text-blue font-body font-extrabold;
+    @apply text-2xl text-blue dark:text-blue-200 font-body font-extrabold;
 }
 h4 {
-    @apply text-lg text-red font-extrabold;
+    @apply text-lg text-red  dark:text-red-200 font-extrabold;
 }
 </style>

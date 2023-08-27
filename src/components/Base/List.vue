@@ -12,10 +12,13 @@
         <div v-else-if="typeof data === 'object'">
             <ul>
                 <li v-for="(value, key) in data" :key="key" class="mb-2">
-                    <span class="text-red font-bold capitalize"
+                    <span
+                        class="text-red dark:text-red-200 font-bold capitalize"
                         >{{ key }}:
                     </span>
-                    <span class="text-black-400">{{ value }}</span>
+                    <span class="text-black-400 dark:text-gray-300">{{
+                        value
+                    }}</span>
                 </li>
             </ul>
         </div>
@@ -23,7 +26,6 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
 import { onMounted } from "vue";
 const props = defineProps({
     title: String,

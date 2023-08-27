@@ -1,6 +1,6 @@
 <script setup>
 import Heading from "./Base/Heading.vue";
-import Skills from "./Base/Skills.vue";
+import Skills from "./Skills.vue";
 defineProps({
     skills: {
         type: Object,

@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted } from "vue";
-
 import Layout from "./layouts/Layout.vue";
 import jsonData from "./assets/datas/resume.json";
 import Header from "./components/Header.vue";
@@ -9,17 +7,13 @@ import Technical from "./components/Technical.vue";
 import Block from "./components/Base/Block.vue";
 import List from "./components/Base/List.vue";
 import Experiences from "./components/Experiences.vue";
-
 const resumeData = jsonData;
-onMounted(() => {
-    console.log(resumeData);
-});
 </script>
 
 <template>
     <Layout>
         <main
-            class="flex flex-col min-h-screen max-w-screen-xl bg-white-200 font-body font-light subpixel-antialiased text-black-500 lg:w-10/12 my-16 shadow-lg py-20 px-8 lg:px-24"
+            class="flex flex-col min-h-screen max-w-screen-xl bg-white-200 dark:bg-black-700 font-body font-light dark:font-normal text-dark-700 dark:tracking-wide dark:text-white-100 subpixel-antialiased text-black-500 lg:w-10/12 my-16 shadow-lg py-20 px-8 lg:px-24"
         >
             <Header :data="resumeData"></Header>
 

@@ -1,6 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
-import Heading from "./Heading.vue";
+import Heading from "./Base/Heading.vue";
 
 const props = defineProps({
     category: String,
@@ -50,14 +49,14 @@ const getProgressColor = (level) => {
                 <p class="flex-grow">
                     <span class="z-10 relative text-xs">{{ skill }}</span>
                     <span
-                        class="text-xs ml-2 bg-gray-300 rounded-full px-2 py-1"
+                        class="text-xs ml-2 bg-gray-300 dark:bg-black-300 rounded-full px-2 py-1"
                         >{{ level }}%</span
                     >
                 </p>
 
                 <div class="ml-2 relative w-16">
                     <div
-                        class="absolute h-1 rounded-full w-full bg-gray-300"
+                        class="absolute h-1 rounded-full w-full bg-gray-300 dark:bg-black-300"
                     ></div>
                     <div
                         :style="{ width: level + '%' }"

@@ -6,12 +6,6 @@
             class="break-inside-avoid-column"
         >
             <div class="relative pb-8">
-                <span
-                    v-if="index !== professionalExperiences.length - 1"
-                    class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
-                    aria-hidden="true"
-                >
-                </span>
                 <div class="relative flex space-x-3">
                     <div>
                         <!-- We don't have icons for each experience, so using a default placeholder for now -->
@@ -52,10 +46,8 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
 import Heading from "./Base/Heading.vue";
 import List from "./Base/List.vue";
-import Separator from "./Base/Separator.vue";
 
 defineProps({
     professionalExperiences: {
