@@ -1,30 +1,70 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted } from "vue";
+
+import Layout from "./layouts/Layout.vue";
+import jsonData from "./assets/datas/resume.json";
+import Header from "./components/Header.vue";
+import Portrait from "./components/Portrait.vue";
+import Technical from "./components/Technical.vue";
+import Block from "./components/Base/Block.vue";
+import List from "./components/Base/List.vue";
+import Experiences from "./components/Experiences.vue";
+
+const resumeData = jsonData;
+onMounted(() => {
+    console.log(resumeData);
+});
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <Layout>
+        <main
+            class="flex flex-col min-h-screen max-w-screen-xl bg-white-200 font-body font-light subpixel-antialiased text-black-500 lg:w-10/12 my-16 shadow-lg py-20 px-8 lg:px-24"
+        >
+            <Header :data="resumeData"></Header>
+
+            <section class="flex flex-wrap pt-14">
+                <div class="w-full lg:pr-16 lg:w-2/3">
+                    <Block title="À propos">
+                        {{ resumeData.resume.summary }}
+                    </Block>
+                    <Technical
+                        :skills="resumeData.resume.technicalSkills"
+                        class="mt-6"
+                    />
+                </div>
+                <div class="w-full lg:w-1/3">
+                    <Portrait class="hidden lg:block" />
+                    <Block title="Certifications">
+                        <List :data="resumeData.resume.certifications" />
+                    </Block>
+                    <Block title="Formations">
+                        <List :data="resumeData.resume.education" />
+                    </Block>
+                    <Block title="Langages">
+                        <List :data="resumeData.resume.languages" />
+                    </Block>
+                    <Block title="Loisirs">
+                        <List :data="resumeData.resume.hobbies" />
+                    </Block>
+                </div>
+            </section>
+            <section>
+                <Block title="Experiences Professionnelles" level="2">
+                    <Experiences
+                        :professionalExperiences="
+                            resumeData.resume.professionalExperiences
+                        "
+                    />
+                </Block>
+            </section>
+        </main>
+    </Layout>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style media="print">
+@page {
+    size: auto; /* auto is the initial value */
+    margin: 0; /* this affects the margin in the printer settings */
 }
 </style>
