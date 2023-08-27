@@ -4,8 +4,8 @@
         "lastName": "Gardette",
         "name": "Simon Gardette",
         "job": "Développeur Fullstack",
-        "email": "simon.gardette@syslex.fr                  ",
-        "phone": "(+33) 6 03 93 56 76",
+        "email": "simon.gardette@toto.fr",
+        "phone": "(+33) 6 03 .. .. .. ..",
 
         "links": {
             "website": "https://simongardette.fr",
@@ -122,11 +122,11 @@
             "Particulièrement efficace à gérer les imprévus et les problèmes inconnus"
         ],
         "languages": {
-            "french": "Le français est ma langue natale. Je me targue donc d’en maitriser les arcanes. Au risque, parfois, d’en faire un peu trop.",
-            "english": "I’m pretty proud to say I can maintain a conversation, both written and oral in english whereas it’s with a native speaker or not."
+            "Français": "Le français est ma langue natale. Je me targue donc d’en maitriser les arcanes. Au risque, parfois, d’en faire un peu trop.",
+            "English": "I’m pretty proud to say I can maintain a conversation, both written and oral in english whereas it’s with a native speaker or not."
         },
         "hobbies": {
-            "videogames": "Jaime jouer aux jeux vidéos"
+            "Videogames": "Jaime jouer aux jeux vidéos"
         }
     }
 }

@@ -11,7 +11,7 @@ defineProps({
 
 <template>
     <div>
-        <Heading :level="3">Compétences techniques</Heading>
+        <Heading :level="3">Compétences</Heading>
         <!-- Masonry Grid Layout -->
         <div class="columns-1 md:columns-2 xl:columns-3">
             <Skills
