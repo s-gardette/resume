@@ -1,37 +1,38 @@
 <template>
-    <button
-        class="px-4 py-2 text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded"
-        @click="toggleDarkMode"
-    >
-        <span v-if="darkMode"> Toggle dark mode </span>
-        <span v-else> Toggle light mode </span>
+    <button class="h-8 w-8" @click="toggleDarkMode">
+        <SvgIcon class="h-8 w-8 fill-yellow-700" v-if="darkMode" name="Sun" />
+        <SvgIcon class="h-8 w-8 fill-blue-200" v-else name="Moon" />
     </button>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            darkMode: false,
-        };
-    },
-    methods: {
-        toggleDarkMode() {
-            this.darkMode = !this.darkMode;
-            localStorage.setItem("darkMode", JSON.stringify(this.darkMode));
-        },
-    },
-    mounted() {
-        this.darkMode = JSON.parse(localStorage.getItem("darkMode"));
-    },
-    watch: {
-        darkMode(newVal) {
-            if (newVal) {
-                document.body.classList.add("dark");
-            } else {
-                document.body.classList.remove("dark");
-            }
-        },
-    },
+<script setup>
+import { ref, onMounted, watchEffect } from "vue";
+import SvgIcon from "./Base/SvgIcon.vue";
+
+// Use `ref` for reactive variables.
+const darkMode = ref(false);
+
+// Replace methods with simple functions.
+const toggleDarkMode = () => {
+    darkMode.value = !darkMode.value;
+    localStorage.setItem("darkMode", JSON.stringify(darkMode.value));
 };
+
+// Move lifecycle hooks like `mounted()` into `onMounted` or `onBeforeMount`.
+onMounted(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    if (storedDarkMode !== null) {
+        darkMode.value = JSON.parse(storedDarkMode);
+    }
+});
+
+// Replace watchers with `watchEffect`.
+watchEffect(() => {
+    const bodyClassList = document.body.classList;
+    if (darkMode.value) {
+        bodyClassList.add("dark");
+    } else {
+        bodyClassList.remove("dark");
+    }
+});
 </script>

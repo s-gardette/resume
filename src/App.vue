@@ -29,17 +29,17 @@ const resumeData = jsonData;
                 </div>
                 <div class="w-full lg:w-1/3">
                     <Portrait class="hidden lg:block" />
-                    <Block title="Certifications">
-                        <List :data="resumeData.resume.certifications" />
-                    </Block>
-                    <Block title="Formations">
-                        <List :data="resumeData.resume.education" />
-                    </Block>
                     <Block title="Langages">
                         <List :data="resumeData.resume.languages" />
                     </Block>
+                    <Block title="Certifications">
+                        <List :data="resumeData.resume.certifications" />
+                    </Block>
                     <Block title="Loisirs">
                         <List :data="resumeData.resume.hobbies" />
+                    </Block>
+                    <Block title="Formations">
+                        <List :data="resumeData.resume.education" />
                     </Block>
                 </div>
             </section>

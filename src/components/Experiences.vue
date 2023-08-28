@@ -1,5 +1,5 @@
 <template>
-    <ul role="list" class="columns-1 xl:columns-2 gap-8">
+    <ul role="list" class="grid grid-cols-1 xl:grid-cols-2 gap-8">
         <li
             v-for="(experience, index) in professionalExperiences"
             :key="index"
@@ -10,34 +10,34 @@
                     <div>
                         <!-- We don't have icons for each experience, so using a default placeholder for now -->
                         <span
-                            class="h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white bg-blue-500"
+                            class="h-8 w-8 rounded-full flex items-center justify-center bg-red dark:bg-red-200 mt-2"
                         >
-                            <svg
-                                class="h-5 w-5 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M11 0h3L9 20H6l5-20z" />
-                            </svg>
+                            <SvgIcon
+                                class="h-4 w-4 fill-white"
+                                :name="experience.icon"
+                            />
                         </span>
                         <p
-                            class="experience-years text-xl font-display font-bold mt-4"
+                            class="experience-years text-xl font-extrabold mt-4 dark:text-white text-gray-500 leading-2 tracking-tightest"
                         >
-                            {{ experience.years }}
+                            {{ experience.start_date }}-{{
+                                experience.end_date
+                            }}
                         </p>
                     </div>
                     <div class="w-full">
-                        <div class="flex justify-between">
-                            <Heading :level="3" class="self-start">
+                        <div class="flex lg:justify-between flex-wrap">
+                            <Heading :level="3" class="mr-2 lg:mr-0">
                                 {{ experience.company }}
                             </Heading>
-                            <Heading :level="4" class="self-end"
+                            <Heading :level="4" class="mt-3"
                                 >{{ experience.position }}
                             </Heading>
                         </div>
-                        <List :data="experience.responsibilities" />
+                        <List
+                            class="text-justify"
+                            :data="experience.responsibilities"
+                        />
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
 <script setup>
 import Heading from "./Base/Heading.vue";
 import List from "./Base/List.vue";
-
+import SvgIcon from "./Base/SvgIcon.vue";
 defineProps({
     professionalExperiences: {
         type: Array,

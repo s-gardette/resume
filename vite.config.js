@@ -6,12 +6,14 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import { VitePWA } from "vite-plugin-pwa";
+import svgLoader from "vite-svg-loader";
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         vue(),
         imagetools(),
+        svgLoader(),
         VueI18nPlugin(
             {
                 /* options */

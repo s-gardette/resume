@@ -4,11 +4,11 @@
         "lastName": "Gardette",
         "name": "Simon Gardette",
         "job": "Développeur Fullstack",
-        "email": "simon.gardette@toto.fr",
-        "phone": "(+33) 6 03 .. .. .. ..",
+        "email": "simon.gardette@syslex.fr",
+        "phone": "(+33) 6 03 93 56 76",
 
         "links": {
-            "website": "https://simongardette.fr",
+            "website": "https://simongardette.com",
             "linkedin": "https://www.linkedin.com/in/simongardette/"
         }
     },
@@ -80,8 +80,9 @@
         "professionalExperiences": [
             {
                 "company": "Syslex",
-                "position": "Consultant",
-                "years": "2019/2023",
+                "position": "Consultant & C.T.O Externe",
+                "start_date": 2019,
+                "end_date": 2023,
                 "responsibilities": [
                     "Développement de sites avec un focus important sur la performance et les délais",
                     "Conception de plateforme Ecommerce",
@@ -90,12 +91,14 @@
                     "Accompagnement d’équipes croissance",
                     "Setup de solution d’analytics / tag management",
                     "Construction de plateforme de BI / outils de visualisation / Analyses de données simples"
-                ]
+                ],
+                "icon": "Wrench"
             },
             {
                 "company": "BonneGueule",
                 "position": "Directeur Digital",
-                "years": "2016/2019",
+                "start_date": 2016,
+                "end_date": 2019,
                 "responsibilities": [
                     "Structuration d’une équipe croissance (CRM / Website / Ads / Data)",
                     "Management direct de 3 personnes",
@@ -103,7 +106,47 @@
                     "Refonte du site E-commerce en collaboration avec le directeur artistique. La réalisation a été opérée par une agence externe.",
                     "Mise en place d’une roadmap suivie sur 3 puis 5 ans",
                     "Création de dashboard de reporting interne et mise à disposition de données d’aide à la décision et de segmentation dans les outils de la société (CRM particulièrement)"
-                ]
+                ],
+                "icon": "Shirt"
+            },
+            {
+                "company": "Universal Music",
+                "position": "Responsable Web & Datas",
+                "start_date": 2012,
+                "end_date": 2016,
+                "responsibilities": [
+                    "Refonte du site Universal Music France et création d’une API de métadonnées artistes associées.",
+                    "Mise en place d’outils d’aide à la communication en ligne (générateur de site web, plateforme de jeux-concours, solution de connexion unifiée (SSO))",
+                    "Gestion de la bonne collecte et de l’analyse de données via la mise en place de solutions de tag management sur plus de 400 sites",
+                    "Création de dashboards afin de faciliter la consultation des données par les équipes",
+                    "Participation au déploiement et à la formation des équipes sur la solution de visualisation de données artiste internationale du groupe",
+                    "Mise en conformité RGPD des sites du groupe avec les recommandations de la CNIL"
+                ],
+                "icon": "CompactDisc"
+            },
+            {
+                "company": "Sartepenso",
+                "position": "Consultant SEO / Web analyse",
+                "start_date": 2009,
+                "end_date": 2016,
+                "responsibilities": [
+                    "Relation et getion de projets avec des clients grand comptes et d’envergure plus réduite)",
+                    "Conception d’architectures de crawl/Analyse de Logs (01net.com, Inria)",
+                    "Recommandations et participation à la rédaction de contenus (Latribune, EgE Rabat, Essec Manheim, Sport2000… ).",
+                    "Optimisation de l’ergonomie pour des plateformes E-commerce suite à l’analyse des données Analytics et A/B testing.",
+                    "Gestion de campagnes Adwords et Facebook (Plus d’1 million d’euros cumulés pour des groupes comme La Banque Postale ou Avanquest)"
+                ],
+                "icon": "MagnifyingGlass"
+            },
+            {
+                "company": "1ère Position",
+                "position": "E-marketeur",
+                "start_date": 2007,
+                "end_date": 2009,
+                "responsibilities": [
+                    "Élaboration et réalisation de stratégies de référencement naturel/payant pour dans des secteurs variés tels que la banque, le tourisme, la musique ou encore l’hôtellerie de Luxe."
+                ],
+                "icon": "ArrowTrendUp"
             }
         ],
         "education": {

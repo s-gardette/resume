@@ -5,10 +5,10 @@ import PrintButton from "../components/PrintButton.vue";
 
 <template>
     <div class="flex justify-center flex-grow min-h-screen">
-        <div class="absolute right-0 top-2 right-5 bg-transparent">
-            <DarkModeToogle class="inline inline mr-2" />
-            <PrintButton class="inline" />
-        </div>
+        <header id="top" class="absolute right-0 top-0 right-0 px-5 py-2">
+            <DarkModeToogle class="inline mr-2" />
+            <PrintButton class="hidden" />
+        </header>
         <slot />
     </div>
 </template>
@@ -18,6 +18,9 @@ div {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
+/* #top {
+    @apply bg-white-500 dark:bg-black-500;
+} */
 
 @keyframes gradient {
     0% {

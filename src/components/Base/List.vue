@@ -2,7 +2,7 @@
     <div class="max-w-lg font-sans text-left">
         <!-- Render list based on data type -->
         <div v-if="Array.isArray(data)">
-            <ul class="list-bullet pl-5">
+            <ul class="list-disc pl-5">
                 <li v-for="item in data" :key="item" class="mb-2">
                     {{ item }}
                 </li>
@@ -31,11 +31,4 @@ const props = defineProps({
     title: String,
     data: [Object, Array],
 });
-onMounted(() => {
-    console.log(props.data);
-});
 </script>
-
-<style scoped>
-/* Additional Tailwind styles if needed */
-</style>

@@ -18,22 +18,26 @@ defineProps({
             <p>{{ data.infos.lastName }}</p>
         </Heading>
         <div
-            class="w-full text-xs lg:flex lg:justify-between lg:flex-row lg:flex-wrap flex justify-between flex-row flex-wrap"
+            class="w-full text-red dark:text-red-200 text-xs lg:justify-between flex justify-between flex-row flex-wrap font-bold"
         >
-            <Heading :level="2" class="text-red lg:order-2 order-2">
+            <Heading :level="2" class="xl:order-2 order-2">
                 {{ data.infos.job }}
             </Heading>
-            <div class="lg:order-1 order-1 text-lg">
-                <Text class="text-red">{{ data.infos.phone }}</Text>
-                <Text class="text-red">{{ data.infos.email }}</Text>
+            <div class="xl:order-1 order-1 text-lg">
+                <Link :href="`tel:${data.infos.phone}`" class="block">{{
+                    data.infos.phone
+                }}</Link>
+                <Link :href="`mailto:${data.infos.email}`" class="block">{{
+                    data.infos.email
+                }}</Link>
             </div>
-            <div class="lg:order-3 order-3">
+            <div class="xl:order-3 order-3">
                 <Link
                     v-for="(item, index) in data.infos.links"
                     :key="index"
                     :href="item"
                     target="_blank"
-                    class="block lg:text-right text-lg"
+                    class="block text-left xl:text-right text-lg"
                 >
                     {{ item }}
                 </Link>

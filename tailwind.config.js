@@ -13,6 +13,9 @@ export default {
                 print: { raw: "print" },
                 screen: { raw: "screen" },
             },
+            letterSpacing: {
+                tightest: "-.2em",
+            },
             fontFamily: {
                 title: ["Richieschichue", "sans-serif"],
                 display: ["Richieschichue", "sans-serif"],
