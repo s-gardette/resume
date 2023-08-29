@@ -5,9 +5,12 @@ import PrintButton from "../components/PrintButton.vue";
 
 <template>
     <div class="flex justify-center flex-grow min-h-screen">
-        <header id="top" class="absolute right-0 top-0 right-0 px-5 py-2">
-            <DarkModeToogle class="inline mr-2" />
-            <PrintButton class="hidden" />
+        <header
+            id="top"
+            class="absolute right-0 top-0 flex justify-between flex-grow pt-2"
+        >
+            <PrintButton class="hidden lg:inline-block" />
+            <DarkModeToogle class="inline-block ml-4 mr-2" />
         </header>
         <slot />
     </div>

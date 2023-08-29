@@ -13,7 +13,8 @@ const resumeData = jsonData;
 <template>
     <Layout>
         <main
-            class="flex flex-col min-h-screen max-w-screen-xl bg-white-200 dark:bg-black-700 font-body font-light dark:font-normal text-dark-700 dark:tracking-wide dark:text-white-100 subpixel-antialiased text-black-500 lg:w-10/12 my-16 shadow-lg py-20 px-8 lg:px-24"
+            id="main"
+            class="flex flex-col screen:min-h-screen screen:max-w-screen-xl bg-white-200 dark:bg-black-700 font-body font-light dark:font-normal text-dark-700 dark:tracking-wide dark:text-white-100 subpixel-antialiased text-black-500 screen:lg:w-10/12 my-16 shadow-lg screen:py-20 screen:px-8 screen:lg:px-24"
         >
             <Header :data="resumeData"></Header>
 

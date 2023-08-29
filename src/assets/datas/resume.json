@@ -8,8 +8,8 @@
         "phone": "(+33) 6 03 93 56 76",
 
         "links": {
-            "website": "https://simongardette.com",
-            "linkedin": "https://www.linkedin.com/in/simongardette/"
+            "linkedin": "https://www.linkedin.com/in/simongardette/",
+            "github": "https://github.com/s-gardette"
         }
     },
     "resume": {
@@ -130,7 +130,7 @@
                 "start_date": 2009,
                 "end_date": 2016,
                 "responsibilities": [
-                    "Relation et getion de projets avec des clients grand comptes et d’envergure plus réduite)",
+                    "Relation et gestion de projets avec des clients 'grand compte' et d’envergure plus réduite)",
                     "Conception d’architectures de crawl/Analyse de Logs (01net.com, Inria)",
                     "Recommandations et participation à la rédaction de contenus (Latribune, EgE Rabat, Essec Manheim, Sport2000… ).",
                     "Optimisation de l’ergonomie pour des plateformes E-commerce suite à l’analyse des données Analytics et A/B testing.",
@@ -169,7 +169,10 @@
             "English": "I’m pretty proud to say I can maintain a conversation, both written and oral in english whereas it’s with a native speaker or not."
         },
         "hobbies": {
-            "Videogames": "Jaime jouer aux jeux vidéos"
+            "Videogames": "J’aime évidemment le jeu vidéo, même si, en force est de constater que je vais désormais plutôt privilégier les expériences narratives courtes aux grandes épopées.",
+            "Musique": "Je suis aussi avide de musique comme en atteste mon parcours et je n’envisage pas passer ne serais ce qu’une journée sans musique.",
+            "Cinema": "S’ajoute une passion pour le cinéma, qu’il soit chef d’œuvre ou beaucoup moins avouable.",
+            "Sport": "Enfin, car paraît-il que rien ne vaut un esprit sain dans un corps sain, j’essaie de me remettre à l’escalade depuis quelque temps, avec plus ou moins de succès, ne nous mentons pas."
         }
     }
 }

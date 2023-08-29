@@ -48,10 +48,6 @@ const getProgressColor = (level) => {
             >
                 <p class="flex-grow">
                     <span class="z-10 relative text-xs">{{ skill }}</span>
-                    <span
-                        class="text-xs ml-2 bg-gray-300 dark:bg-black-300 rounded-full px-2 py-1"
-                        >{{ level }}%</span
-                    >
                 </p>
 
                 <div class="ml-2 relative w-16">
@@ -64,6 +60,12 @@ const getProgressColor = (level) => {
                         class="absolute h-1 rounded-full z-10"
                     ></div>
                 </div>
+                <p>
+                    <span
+                        class="text-xs ml-2 bg-gray-300 dark:bg-black-300 rounded-full px-2 py-1"
+                        >{{ level }}%</span
+                    >
+                </p>
             </div>
         </div>
     </div>
