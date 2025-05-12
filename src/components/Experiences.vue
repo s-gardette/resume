@@ -7,14 +7,14 @@
         >
             <!-- Simplified layout for both screen and print -->
             <div class="flex flex-row justify-between items-baseline w-full">
-                <Heading :level="3" class="uppercase text-lg print:text-xs mb-0 md:mb-0">
+                <Heading :level="3" class="uppercase text-lg print:text-base mb-0 md:mb-0">
                     {{ experience.company }}
                 </Heading>
                 <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap print:text-2xs">
                     {{ experience.years }}
                 </span>
             </div>
-            <Heading :level="4" class="text-base print:text-2xs mb-2 print:mb-0.5">
+            <Heading :level="4" class="text-base print:text-sm mb-2 print:mb-0.5">
                 {{ experience.title }}
             </Heading>
             <List 

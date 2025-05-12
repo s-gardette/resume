@@ -6,7 +6,7 @@
             <!-- Certifications handling: Year and Name on same line -->
             <ul v-if="data.length > 0 && typeof data[0] === 'object' && data[0].hasOwnProperty('year') && data[0].hasOwnProperty('name')" 
                 class="pl-0 space-y-1 print:space-y-0.5 print:grid print:grid-cols-2 print:gap-x-2"> 
-                 <li v-for="item in data" :key="item.name" class="text-xs md:text-sm flex items-baseline print:text-xs">
+                 <li v-for="item in data" :key="item.name" class="text-xs md:text-sm flex items-baseline print:text-2xs">
                     <span class="w-12 shrink-0 text-gray-500 dark:text-gray-400 font-medium print:w-8">{{ item.year }}</span>
                     <span class="text-gray-600 dark:text-gray-300">{{ item.name }}</span>
                 </li>
@@ -19,7 +19,7 @@
                 <li
                     v-for="(item, index) in data"
                     :key="index"
-                    class="text-xs md:text-sm text-gray-600 dark:text-gray-300 print:text-xs"
+                    class="text-xs md:text-sm text-gray-600 dark:text-gray-300 print:text-2xs"
                     :class="{ 'print:before:content-[\'•\'] print:before:inline print:before:mr-1 print:before:text-gray-400': index > 0 && printCompact }"
                 >
                    {{ item }}
@@ -30,13 +30,13 @@
         <!-- Object handling (e.g., for Langages): Key with description below -->
         <div v-else-if="typeof data === 'object'">
             <ul :class="[
-                'space-y-2 print:space-y-1 print:grid print:grid-cols-2 print:gap-x-2',
+                'space-y-1 print:space-y-0.5 print:grid print:grid-cols-2 print:gap-x-2',
                 { 'print:flex print:flex-wrap print:gap-x-3 print:space-y-0': printCompact }
             ]">
                 <li 
                     v-for="(value, key) in data" 
                     :key="key" 
-                    class="text-xs md:text-sm print:text-xs"
+                    class="text-xs md:text-sm print:text-2xs"
                 >
                     <!-- Language Name -->
                     <span :class="[
@@ -47,7 +47,7 @@
                     </span>
                     <!-- Description -->
                     <span :class="[
-                        'text-gray-600 dark:text-gray-300 text-xs md:text-sm print:text-xs',
+                        'text-gray-600 dark:text-gray-300 text-xs md:text-sm print:text-2xs',
                         printCompact ? 'print:inline' : 'block'
                     ]">
                         {{ value }}
@@ -66,3 +66,12 @@ const props = defineProps({
     printCompact: Boolean
 });
 </script>
+
+<style>
+@media print {
+    .text-2xs {
+        font-size: 0.6rem;
+        line-height: 0.9rem;
+    }
+}
+</style>
