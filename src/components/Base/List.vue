@@ -4,21 +4,22 @@
         <!-- Render list based on data type -->
         <div v-if="Array.isArray(data)">
             <!-- Certifications handling: Year and Name on same line -->
-            <ul v-if="data.length > 0 && typeof data[0] === 'object' && data[0].hasOwnProperty('year') && data[0].hasOwnProperty('name')" class="pl-0 space-y-1 print:space-y-0.5"> 
+            <ul v-if="data.length > 0 && typeof data[0] === 'object' && data[0].hasOwnProperty('year') && data[0].hasOwnProperty('name')" 
+                class="pl-0 space-y-1 print:space-y-0.5 print:grid print:grid-cols-2 print:gap-x-2"> 
                  <li v-for="item in data" :key="item.name" class="text-xs md:text-sm flex items-baseline print:text-xs">
                     <span class="w-12 shrink-0 text-gray-500 dark:text-gray-400 font-medium print:w-8">{{ item.year }}</span>
-                    <span class="text-black-500 dark:text-white-100">{{ item.name }}</span>
+                    <span class="text-gray-600 dark:text-gray-300">{{ item.name }}</span>
                 </li>
             </ul>
             <!-- Standard array handling (Loisirs, Experience Details) -->
             <ul v-else :class="[
                 'list-disc list-inside pl-4 space-y-1 print:pl-3 print:space-y-0.5',
-                { 'print:pl-0 print:flex print:flex-wrap print:gap-x-2': printCompact }
+                { 'print:pl-0 print:flex print:flex-row print:flex-wrap print:gap-x-2 print:whitespace-nowrap': printCompact }
             ]">
                 <li
                     v-for="(item, index) in data"
                     :key="index"
-                    class="text-xs md:text-sm text-black-500 dark:text-white-100 print:text-xs"
+                    class="text-xs md:text-sm text-gray-600 dark:text-gray-300 print:text-xs"
                     :class="{ 'print:before:content-[\'•\'] print:before:inline print:before:mr-1 print:before:text-gray-400': index > 0 && printCompact }"
                 >
                    {{ item }}
@@ -29,7 +30,7 @@
         <!-- Object handling (e.g., for Langages): Key with description below -->
         <div v-else-if="typeof data === 'object'">
             <ul :class="[
-                'space-y-2 print:space-y-1',
+                'space-y-2 print:space-y-1 print:grid print:grid-cols-2 print:gap-x-2',
                 { 'print:flex print:flex-wrap print:gap-x-3 print:space-y-0': printCompact }
             ]">
                 <li 

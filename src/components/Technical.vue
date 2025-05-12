@@ -11,8 +11,7 @@ defineProps({
 
 <template>
     <div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-6 print:grid-cols-3 print:gap-x-3 print:gap-y-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-6 print:grid-cols-1 print:gap-y-1">
             <Skills
                 v-for="(skills, category) in skills"
                 :key="category"

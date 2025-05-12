@@ -1,20 +1,20 @@
 <template>
-    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 print:space-y-2">
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 print:space-y-1">
         <li
             v-for="(experience, index) in professionalExperiences"
             :key="index"
-            class="group break-inside-avoid relative pb-4 border-b border-gray-200 dark:border-gray-700 md:border-b-0 print:pb-1"
+            class="group break-inside-avoid relative pb-4 border-b border-gray-200 dark:border-gray-700 md:border-b-0 print:pb-0.5"
         >
             <!-- Simplified layout for both screen and print -->
             <div class="flex flex-row justify-between items-baseline w-full">
                 <Heading :level="3" class="uppercase text-lg print:text-xs mb-0 md:mb-0">
                     {{ experience.company }}
                 </Heading>
-                <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap print:text-xs">
+                <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap print:text-2xs">
                     {{ experience.years }}
                 </span>
             </div>
-            <Heading :level="4" class="text-base print:text-xs mb-2 print:mb-1">
+            <Heading :level="4" class="text-base print:text-2xs mb-2 print:mb-0.5">
                 {{ experience.title }}
             </Heading>
             <List 
@@ -43,8 +43,8 @@ defineProps({
 <style>
 @media print {
     .text-2xs {
-        font-size: 0.65rem;
-        line-height: 1rem;
+        font-size: 0.6rem;
+        line-height: 0.9rem;
     }
 }
 </style>

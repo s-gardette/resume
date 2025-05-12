@@ -94,8 +94,8 @@
     ],
     "Outils & Technologies": [
       "Python, Typescript, HTML, CSS, Git, Docker, Kubernetes",
-      "Outils de monitoring des performances SEO et spécifiques au métier : Google Search Console, Oncrawl, SEMrush, Ahrefs …",
-      "Outils d’analytics propriétaires et open source ( GA4, AT Internet, Snowplow, Piano)",
+      "Outils de monitoring spécifiques au métier : GSC , Oncrawl, SEMrush, Ahrefs ...",
+      "Outils d’analytics propriétaires et open source (GA4, AT Internet, Snowplow, Piano)",
       "Outils de CRM : Klaviyo, Mailchimp, Hubspot, Salesforce",
       "Outils BI : Google Data Studio, Tableau, Metabase",
       "ETL /ELT : Airflow, Prefect, Dbt, Talend",
