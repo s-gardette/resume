@@ -2,7 +2,7 @@
 
 My resume
 Revolver Ocelot
-Revolver Ocelot
+
 
 ## TODO
 
