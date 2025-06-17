@@ -11,13 +11,15 @@ defineProps({
 
 <template>
     <div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-6 print:grid-cols-1 print:gap-y-1">
+        <Heading :level="3">Compétences</Heading>
+        <!-- Masonry Grid Layout -->
+        <div class="columns-1 md:columns-2 xl:columns-3">
             <Skills
                 v-for="(skills, category) in skills"
                 :key="category"
                 :category="category"
                 :skills="skills"
-                class="break-inside-avoid"
+                class="break-inside-avoid-column"
             />
         </div>
     </div>

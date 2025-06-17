@@ -1,27 +1,46 @@
 <template>
-    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 print:space-y-1">
+    <ul role="list" class="grid grid-cols-1 xl:grid-cols-2 gap-8">
         <li
             v-for="(experience, index) in professionalExperiences"
             :key="index"
-            class="group break-inside-avoid relative pb-4 border-b border-gray-200 dark:border-gray-700 md:border-b-0 print:pb-0.5"
+            class="break-inside-avoid-column"
         >
-            <!-- Simplified layout for both screen and print -->
-            <div class="flex flex-row justify-between items-baseline w-full">
-                <Heading :level="3" class="uppercase text-lg print:text-base mb-0 md:mb-0">
-                    {{ experience.company }}
-                </Heading>
-                <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap print:text-2xs">
-                    {{ experience.years }}
-                </span>
+            <div class="relative pb-8">
+                <div class="relative flex space-x-3">
+                    <div>
+                        <!-- We don't have icons for each experience, so using a default placeholder for now -->
+                        <span
+                            class="h-8 w-8 rounded-full flex items-center justify-center bg-red dark:bg-red-200 mt-2"
+                        >
+                            <SvgIcon
+                                class="h-4 w-4 fill-white"
+                                :name="experience.icon"
+                            />
+                        </span>
+                        <p
+                            class="experience-years text-xl font-extrabold mt-4 dark:text-white text-gray-500 leading-2 tracking-tightest"
+                        >
+                            {{ experience.start_date }}-{{
+                                experience.end_date
+                            }}
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex lg:justify-between flex-wrap">
+                            <Heading :level="3" class="mr-2 lg:mr-0">
+                                {{ experience.company }}
+                            </Heading>
+                            <Heading :level="4" class="mt-3"
+                                >{{ experience.position }}
+                            </Heading>
+                        </div>
+                        <List
+                            class="text-justify"
+                            :data="experience.responsibilities"
+                        />
+                    </div>
+                </div>
             </div>
-            <Heading :level="4" class="text-base print:text-sm mb-2 print:mb-0.5">
-                {{ experience.title }}
-            </Heading>
-            <List 
-                class="text-sm space-y-1.5 print:text-2xs print:space-y-0 print:flex print:flex-row print:flex-wrap print:gap-x-1" 
-                :data="experience.details"
-                print-compact
-            />
         </li>
     </ul>
 </template>
@@ -29,22 +48,17 @@
 <script setup>
 import Heading from "./Base/Heading.vue";
 import List from "./Base/List.vue";
-// SvgIcon is no longer used
-// import SvgIcon from "./Base/SvgIcon.vue"; 
+import SvgIcon from "./Base/SvgIcon.vue";
 defineProps({
-    // Prop name remains the same, but data structure inside has changed
     professionalExperiences: {
         type: Array,
         required: true,
     },
 });
 </script>
-
-<style>
-@media print {
-    .text-2xs {
-        font-size: 0.6rem;
-        line-height: 0.9rem;
-    }
+<style scoped>
+.experience-years {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 </style>

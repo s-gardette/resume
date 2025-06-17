@@ -1,40 +1,39 @@
 <script setup>
-import DarkModeToggle from "../components/DarkModeToggle.vue";
+import DarkModeToogle from "../components/DarkModeToogle.vue";
 import PrintButton from "../components/PrintButton.vue";
 </script>
 
 <template>
-    <div class="flex justify-center flex-grow min-h-screen bg-ivory print:bg-white print:min-h-0">
+    <div class="flex justify-center flex-grow min-h-screen">
         <header
             id="top"
-            class="absolute right-0 top-0 flex justify-end items-center z-20 p-3 print:hidden"
+            class="absolute right-0 top-0 flex justify-between flex-grow pt-2"
         >
-            <PrintButton class="hidden lg:block mr-3" />
-            <DarkModeToggle class="block" />
+            <PrintButton class="hidden lg:inline-block" />
+            <DarkModeToogle class="inline-block ml-4 mr-2" />
         </header>
         <slot />
     </div>
 </template>
-
 <style scoped>
 div {
-    @apply bg-ivory dark:bg-gray-900 transition-colors duration-300;
-    background-image: 
-        radial-gradient(circle at top left, rgba(59, 130, 246, 0.1), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(239, 68, 68, 0.1), transparent 30%);
+    @apply bg-gradient-to-r dark:from-red-300 dark:to-blue-900 from-blue-300 to-red-300;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+/* #top {
+    @apply bg-white-500 dark:bg-black-500;
+} */
 
-@media print {
-    div {
-        background: none !important;
-        background-color: white !important;
-        min-height: 0 !important;
-        height: auto !important;
-        display: block !important;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    header#top {
-        display: none !important;
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 </style>
