@@ -44,7 +44,7 @@ const getProgressColor = (level) => {
             <div
                 v-for="(level, skill) in skills"
                 :key="skill"
-                class="mb-3 flex items-center"
+                class="mb-2 flex items-center"
             >
                 <p class="flex-grow">
                     <span class="z-10 relative text-xs">{{ skill }}</span>

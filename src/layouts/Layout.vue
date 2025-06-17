@@ -1,6 +1,13 @@
 <script setup>
 import DarkModeToogle from "../components/DarkModeToogle.vue";
 import PrintButton from "../components/PrintButton.vue";
+import { defineEmits } from 'vue'
+
+const emit = defineEmits(['openPrint'])
+
+const handleOpenPrint = () => {
+    emit('openPrint')
+}
 </script>
 
 <template>
@@ -9,7 +16,7 @@ import PrintButton from "../components/PrintButton.vue";
             id="top"
             class="absolute right-0 top-0 flex justify-between flex-grow pt-2"
         >
-            <PrintButton class="hidden lg:inline-block" />
+            <PrintButton @openPrint="handleOpenPrint" class="hidden lg:inline-block" />
             <DarkModeToogle class="inline-block ml-4 mr-2" />
         </header>
         <slot />

@@ -3,10 +3,10 @@
         "firstName": "Simon",
         "lastName": "Gardette",
         "name": "Simon Gardette",
-        "job": "Développeur Fullstack",
+        "job": "Chief Product and Technology Officer",
         "email": "simon.gardette@syslex.fr",
         "phone": "(+33) 6 03 93 56 76",
-
+        "website": "https://www.simongardette.com",
         "links": {
             "linkedin": "https://www.linkedin.com/in/simongardette/",
             "github": "https://github.com/s-gardette"
@@ -21,7 +21,7 @@
                 "Javascript": 90,
                 "TypeScript": 70,
                 "Php": 70,
-                "C": 30
+                "Go": 30
             },
             "Librairies Front": {
                 "Vue": 90,
@@ -31,24 +31,20 @@
             },
             "Frameworks": {
                 "Django": 90,
-                "FastApi": 90,
-                "Flask": 90,
-                "NextJs": 85,
-                "Gatsby": 85,
-                "Laravel": 60
+                "FastApi/ Flask / Robyn": 90,
+                "Next / Nuxt": 85,
+                "Laravel / Symfony": 60
             },
             "devOps": {
                 "Docker": 90,
                 "AWS": 70,
                 "GCP": 70,
-                "Kubernetes": 50,
-                "Terraform": 40
+                "Kubernetes": 50
             },
             "Bases de Données": {
                 "SQL (postgres, mysql, mariadb ...)": 70,
                 "MongoDB": 50,
                 "Redis": 50,
-                "influxDB": 40,
                 "elasticSearch": 40
             },
             "Marketing": { "SEO": 85, "CRM": 90, "Automation": 90, "SEA": 70 },
@@ -62,7 +58,7 @@
                 "Airflow": 80,
                 "Pandas": 80,
                 "Superset": 90,
-                "seaborn / matplotlib": 70,
+                "Seaborn / Matplot": 70,
                 "Jitsu": 70,
                 "Snowflakes": 50,
                 "Snowplow": 50,
@@ -72,12 +68,27 @@
 
             "Methodologies": { "AAARR": 90, "Agile": 70, "Scrum": 50 },
             "Machine Learning": {
-                "Training": 30,
-                "Pytorch": 20,
-                "Fine Tuning": 20
+                "LLM deployment / fine tuning": 50,
+                "Training": 30
             }
         },
         "professionalExperiences": [
+            {
+                "company": "Le site de L'Auto",
+                "position": "C.P.T.O",
+                "start_date": 2023,
+                "end_date": 2025,
+                "responsibilities": [
+                    "Management d’une équipe tech (dev + chef de projet).",
+                    "Pilotage des partenaires externes (agence, prestataire, etc.)",
+                    "Automatisation des processus internes métier (recrutement, compta).",
+                    "Implémentation d'un système d'IA agentique avec supervision humaine pour la gestion et la réponse aux avis clients",
+                    "mis een place de bonnes paratiques de suivi produit (changelog, communication interne, matrice RACI)",
+                    "Reprise complète du SEO après une migration ratée sur un site à très forte volumétrie (2M+ pages): Augmentation du nombre de pages indexées (2 000 → 500 000) et multiplication par 4 du trafic organique, x5 sur les conversions."
+
+                ],
+                "icon": "Car"
+            },
             {
                 "company": "Syslex",
                 "position": "Consultant & C.T.O Externe",
@@ -169,8 +180,8 @@
             "English": "I’m pretty proud to say I can maintain a conversation, both written and oral in english whereas it’s with a native speaker or not."
         },
         "hobbies": {
-            "Videogames": "J’aime évidemment le jeu vidéo, même si, en force est de constater que je vais désormais plutôt privilégier les expériences narratives courtes aux grandes épopées.",
-            "Musique": "Je suis aussi avide de musique comme en atteste mon parcours et je n’envisage pas passer ne serais ce qu’une journée sans musique.",
+            "Musique": "Je suis avide de musique comme en atteste mon parcours et je n’envisage pas passer ne serais ce qu’une journée sans musique.",
+            "Videogames": "J’aime le jeu vidéo, même si, en force est de constater que je vais désormais plutôt privilégier les expériences narratives courtes aux grandes épopées.",
             "Cinema": "S’ajoute une passion pour le cinéma, qu’il soit chef d’œuvre ou beaucoup moins avouable.",
             "Sport": "Enfin, car paraît-il que rien ne vaut un esprit sain dans un corps sain, j’essaie de me remettre à l’escalade depuis quelque temps, avec plus ou moins de succès, ne nous mentons pas."
         }

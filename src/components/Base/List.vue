@@ -3,7 +3,7 @@
         <!-- Render list based on data type -->
         <div v-if="Array.isArray(data)">
             <ul class="list-disc pl-5">
-                <li v-for="item in data" :key="item" class="mb-2">
+                <li v-for="item in data" :key="item" class="mb-1">
                     {{ item }}
                 </li>
             </ul>
@@ -11,7 +11,7 @@
 
         <div v-else-if="typeof data === 'object'">
             <ul>
-                <li v-for="(value, key) in data" :key="key" class="mb-2">
+                <li v-for="(value, key) in data" :key="key" class="mb-1">
                     <span
                         class="text-red dark:text-red-200 font-bold capitalize"
                         >{{ key }}:

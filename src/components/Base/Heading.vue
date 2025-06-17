@@ -26,13 +26,13 @@ export default {
 
 <style lang="postcss" scoped>
 h1 {
-    @apply text-5xl lg:text-6xl xl:text-8xl text-blue dark:text-blue-200 font-title;
+    @apply text-3xl lg:text-4xl xl:text-5xl text-blue dark:text-blue-200 font-title font-extrabold;
 }
 h2 {
-    @apply lg:text-3xl text-red  dark:text-red-200 font-display;
+    @apply lg:text-2xl text-red  dark:text-red-200 font-title font-extrabold;
 }
 h3 {
-    @apply text-2xl text-blue dark:text-blue-200 font-body font-extrabold;
+    @apply text-2xl text-blue dark:text-blue-200 font-title font-extrabold;
 }
 h4 {
     @apply text-lg text-red  dark:text-red-200 font-extrabold mb-2;

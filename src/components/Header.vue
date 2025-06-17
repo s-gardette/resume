@@ -23,7 +23,7 @@ defineProps({
             <Heading :level="2" class="xl:order-2 order-2">
                 {{ data.infos.job }}
             </Heading>
-            <div class="xl:order-1 order-1 text-lg">
+            <div class="xl:order-1 order-1 text-md">
                 <Link :href="`tel:${data.infos.phone}`" class="block">{{
                     data.infos.phone
                 }}</Link>
@@ -37,7 +37,7 @@ defineProps({
                     :key="index"
                     :href="item"
                     target="_blank"
-                    class="block text-left xl:text-right text-lg"
+                    class="block text-left xl:text-right text-md"
                 >
                     {{ item }}
                 </Link>

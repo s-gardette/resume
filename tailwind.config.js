@@ -17,9 +17,9 @@ export default {
                 tightest: "-.2em",
             },
             fontFamily: {
-                title: ["Richieschichue", "sans-serif"],
-                display: ["Richieschichue", "sans-serif"],
-                body: ["Bricolage Grotesque", "sans-serif"],
+                title: ["Arvo", "serif"],
+                display: ["Arvo", "serif"],
+                body: ["Roboto", "sans-serif"],
             },
             colors: {
                 green: {

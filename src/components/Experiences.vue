@@ -5,7 +5,7 @@
             :key="index"
             class="break-inside-avoid-column"
         >
-            <div class="relative pb-8">
+            <div class="relative">
                 <div class="relative flex space-x-3">
                     <div>
                         <!-- We don't have icons for each experience, so using a default placeholder for now -->
