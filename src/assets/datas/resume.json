@@ -14,7 +14,7 @@
     },
     "resume": {
         "summaryLong": "Avec plus de 15 ans d'expérience dans le numérique et une passion pour la technologie, je suis un leader technique accompli, ayant travaillé dans diverses industries allant de la musique à la mode en passant par la banque ou les services publics. Ma carrière m'a permis de développer une expertise en langages de programmation tels que Python, Javascript (TypeScript), Php, et C, ainsi qu'en librairies front-end, frameworks, bases de données et méthodologies Agile. J'ai occupé des postes de direction et de consultation, gérant des équipes, supervisant des refontes de sites et de plateformes E-commerce, et mettant en place des outils d'analyse et de gestion de données. Mon expérience en marketing, SEO et UX design ajoute une dimension unique à mon profil, me permettant d'aborder les projets avec une perspective holistique. Je cherche à apporter mon expertise et mon leadership à une organisation novatrice, où je peux continuer à contribuer à la croissance et à l'excellence dans le domaine du développement back-end.",
-        "summary": "Je posséde plus de 15 ans d'expérience dans les métiers du numérique, dans des secteurs variés comme la musique, la mode, la banque ou les services publics. Spécialiste des langages orienté web et data : Python, Javascript ou encore Php. Je travail actuellement sur un panel de librairies, frameworks et bases de données varié et je peux m'adapter à la plupart des environnements. J'ai dirigé des équipes, piloté des refontes de sites et plateformes E-commerce, et développé des outils à usage interne comme externe. Ma connaissance en marketing, SEO et UX design renforce mon approche globale des projets.",
+        "summary": "Je possède plus de 15 ans d'expérience dans les métiers du numérique, dans des secteurs variés, comme la musique, la mode, la banque ou les services publics. Spécialiste des langages orientés web et data : Python, Javascript ou encore Php. Je travaille actuellement sur un panel de librairies, frameworks et bases de données varié et je peux m'adapter à la plupart des environnements. J'ai dirigé des équipes, piloté des refontes de sites et plateformes E-commerce, et développé des outils à usage interne comme externe. Ma connaissance en marketing, SEO et UX design renforce mon approche globale des projets.",
         "technicalSkills": {
             "Langages": {
                 "Python": 90,
@@ -79,13 +79,12 @@
                 "start_date": 2023,
                 "end_date": 2025,
                 "responsibilities": [
-                    "Management d’une équipe tech (dev + chef de projet).",
+                    "Management d’une équipe I.T (Developpeur + chef de projet).",
                     "Pilotage des partenaires externes (agence, prestataire, etc.)",
                     "Automatisation des processus internes métier (recrutement, compta).",
                     "Implémentation d'un système d'IA agentique avec supervision humaine pour la gestion et la réponse aux avis clients",
-                    "mis een place de bonnes paratiques de suivi produit (changelog, communication interne, matrice RACI)",
+                    "Mise en place de bonnes pratiques de suivi produit (changelog, communication interne, matrice RACI)",
                     "Reprise complète du SEO après une migration ratée sur un site à très forte volumétrie (2M+ pages): Augmentation du nombre de pages indexées (2 000 → 500 000) et multiplication par 4 du trafic organique, x5 sur les conversions."
-
                 ],
                 "icon": "Car"
             },
@@ -98,7 +97,7 @@
                     "Développement de sites avec un focus important sur la performance et les délais",
                     "Conception de plateforme Ecommerce",
                     "Intégration de designs",
-                    "Direction Technique externalisée",
+                    "Direction technique externalisée",
                     "Accompagnement d’équipes croissance",
                     "Setup de solution d’analytics / tag management",
                     "Construction de plateforme de BI / outils de visualisation / Analyses de données simples"
@@ -180,10 +179,10 @@
             "English": "I’m pretty proud to say I can maintain a conversation, both written and oral in english whereas it’s with a native speaker or not."
         },
         "hobbies": {
-            "Musique": "Je suis avide de musique comme en atteste mon parcours et je n’envisage pas passer ne serais ce qu’une journée sans musique.",
-            "Videogames": "J’aime le jeu vidéo, même si, en force est de constater que je vais désormais plutôt privilégier les expériences narratives courtes aux grandes épopées.",
+            "Musique": "Je suis avide de musique comme en atteste mon parcours et je n’envisage pas de passer ne serait-ce qu’une journée sans musique.",
+            "Videogames": "J’aime le jeu vidéo, même si, force est de constater que je vais désormais plutôt privilégier les expériences narratives courtes aux grandes épopées.",
             "Cinema": "S’ajoute une passion pour le cinéma, qu’il soit chef d’œuvre ou beaucoup moins avouable.",
-            "Sport": "Enfin, car paraît-il que rien ne vaut un esprit sain dans un corps sain, j’essaie de me remettre à l’escalade depuis quelque temps, avec plus ou moins de succès, ne nous mentons pas."
+            "Sport": "Enfin, car parait-il que rien ne vaut un esprit sain dans un corps sain, j’essaie de me remettre à l’escalade depuis quelque temps, avec plus ou moins de succès, ne nous mentons pas."
         }
     }
 }
